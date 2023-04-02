@@ -1,8 +1,11 @@
+import React from 'react';
 import logo from "./logo.svg";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense"
 import "./App.css";
+import ExpenseForm from './components/NewExpense/ExpenseForm';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -26,11 +29,11 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <h2>Let's get started!</h2>
+    <div>
+      <ExpenseForm />
       <Expenses items={expenses} />  
     </div>
   );
-}
+ }
 
 export default App;
