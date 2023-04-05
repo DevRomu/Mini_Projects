@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import logo from "./logo.svg";
 import Expenses from "./components/Expenses/Expenses";
@@ -40,5 +41,14 @@ const App = () => {
     </div>
   );
  }
+=======
+function App() {
+  return (
+    <div>
+      <h2>Let's get started!</h2>
+    </div>
+  );
+}
+>>>>>>> 88bb633ee82d843e748b9aa5c93a870319bb1fe2
 
 export default App;
