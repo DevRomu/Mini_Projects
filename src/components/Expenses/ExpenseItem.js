@@ -9,6 +9,7 @@ const Expenseitem = (props) => {
  
   // Initial
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
@@ -18,6 +19,7 @@ const Expenseitem = (props) => {
         <div className="expense-item__price">${props.amount}</div>
       </div>
     </Card>
+    </li>
   );
 }
 
